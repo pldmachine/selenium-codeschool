@@ -6,7 +6,7 @@ class LoginPage extends BasePage {
 
     goto()
     {
-        driver.get("http://admin-demo.nopcommerce.com/");
+        return driver.get("http://admin-demo.nopcommerce.com/");
     }
 
     login()

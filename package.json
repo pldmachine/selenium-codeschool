@@ -4,6 +4,7 @@
   "description": "Selenium code school",
   "main": "basic.js",
   "dependencies": {
+    "jasmine": "^3.1.0",
     "selenium-webdriver": "^4.0.0-alpha.1"
   },
   "devDependencies": {},
