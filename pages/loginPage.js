@@ -1,23 +1,23 @@
-var webdriver = require('selenium-webdriver');
-var By = webdriver.By;
+// var webdriver = require('selenium-webdriver');
+// var By = webdriver.By;
 var BasePage = require('./basePage')
 
 class LoginPage extends BasePage {
 
     goto()
-    {
-        return driver.get("http://admin-demo.nopcommerce.com/");
+    { 
+        return browser.get('http://admin-demo.nopcommerce.com/');
     }
 
     login()
     {
-        return driver.findElement(By.name('Email')).sendKeys('admin@yourstore.com').then(()=>{
-            return driver.findElement(By.name('Password')).sendKeys('admin').then(()=>{
-                return driver.findElement(By.className('login-button')).click().then(()=>{
+        return element(by.name('Email')).sendKeys('admin@yourstore.com').then(()=>{
+            return element(by.name('Password')).sendKeys('admin').then(()=>{
+                return element(by.className('login-button')).click().then(()=>{
                     return require('./homePage');
                 })
             })
-        })    
+        })  
     }
 
 }
