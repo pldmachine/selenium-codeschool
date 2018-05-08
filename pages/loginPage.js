@@ -11,10 +11,13 @@ class LoginPage extends BasePage {
 
     login()
     {
-        driver.findElement(By.name('Email')).sendKeys('admin@yourstore.com');
-        driver.findElement(By.name('Password')).sendKeys('admin');
-        driver.findElement(By.className('login-button')).click();
-        return require('./homePage');
+        return driver.findElement(By.name('Email')).sendKeys('admin@yourstore.com').then(()=>{
+            return driver.findElement(By.name('Password')).sendKeys('admin').then(()=>{
+                return driver.findElement(By.className('login-button')).click().then(()=>{
+                    return require('./homePage');
+                })
+            })
+        })    
     }
 
 }
