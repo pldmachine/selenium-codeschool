@@ -6,5 +6,6 @@ https://www.protractortest.org/#/tutorial
 protractor conf.js
 protractor conf.js --specs homePageSpec.js
 
-ProtractorBy: http://www.protractortest.org/#/api?view=ProtractorBy
-ElementActions: http://www.protractortest.org/#/api?view=webdriver.WebElement
+By: http://www.protractortest.org/#/api?view=ProtractorBy
+Element Actions: http://www.protractortest.org/#/api?view=webdriver.WebElement
+CSS Selectors https://www.w3schools.com/cssref/css_selectors.asp
