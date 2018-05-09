@@ -5,3 +5,5 @@ https://www.protractortest.org/#/tutorial
 
 protractor conf.js
 protractor conf.js --specs homePageSpec.js
+
+ProtractorBy: http://www.protractortest.org/#/api?view=ProtractorBy
